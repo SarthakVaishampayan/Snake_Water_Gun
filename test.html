@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Water Gun</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            width: 95%;
+            height: 40vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: auto;
+        }
+
+        button {
+            border: solid black 2px;
+            height: 50px;
+            width: 250px;
+            transition: all 0.1s ease-in-out;
+        }
+
+        button:hover {
+            border-radius: 40px;
+        }
+        .scoreboard{
+            /* border: 2px solid black; */
+            width: 100%;
+            height: 20vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        
+        }
+        .cpu{
+            text-align: center;
+            position: relative;
+            top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+
+        <div style="text-align: center;margin: 20px;">Pick a number larger then CPU</div>
+       
+
+        <div class="container">
+
+            <button id="1" value=1>1</button>
+            <button id="2" value=2>2</button>
+            <button id="3" value=3>3</button>
+            <button id="4" value=4>4</button>
+            <button id="5" value=5>5</button>
+            <button id="6" value=6>6</button>
+        </div>
+        <div class="cpu" id="cpu">CPU : <br></div>
+        <div class="scoreboard">
+            
+            <div class="score" id="userScore">User : 0 </div>
+            <div class="score" id="cpuScore">CPU : 0</div>
+        </div>
+        <script src="test.js"></script>
+    </body>
+
+</html>
